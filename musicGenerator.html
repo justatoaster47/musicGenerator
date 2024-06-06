@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- <script src="https://unpkg.com/tone"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tonaljs/tonal/browser/tonal.min.js"></script>
+  <script src="https: / /unpkg.com/tone@14.7.58/build/Tone. js"></script>
+  <script src="libraries/p5.sound.js"></script> -->
+
+  <script src="https://unpkg.com/tone"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tonaljs/tonal/browser/tonal.min.js"></script>
+  <script src="https://unpkg.com/tone@14.7.58/build/Tone.js"></script>
+  <script src="libraries/p5.sound.js"></script>
+
+
+
+  <link rel="stylesheet" href="musicGenerator.css">
+  <script src="musicGenerator.js"></script>
+
+</head>
+
+<body>
+
+  <div class ='header' >
+    <h1>
+      Melody Generator 
+    </h1>
+  </div>
+
+  <main class="main">
+
+    <div class="grid1">
+      <div class="grid1item" id='playPause'>Play/Pause</div>
+      <div class="grid1item" id='randomizeButton'>Randomize</div>
+      <div class="grid1item">
+        <select id="keyInput">
+          <option value="4">KEY</option>
+
+          <option value="1">A Major</option>
+          <option value="2">A# / Bb Major</option>
+          <option value="3">B Major</option>
+          <option value="4">C Major</option>
+          <option value="5">C# / Db Major</option>
+          <option value="6">D Major</option>
+          <option value="7">D# / Eb Major</option>
+          <option value="8">E Major</option>
+          <option value="9">F Major</option>
+          <option value="10">F# / Gb Major</option>
+          <option value="11">G Major</option>
+          <option value="12">G# / Ab Major</option>
+
+          <option value="4">A Minor</option>
+          <option value="5">A# / Bb Minor</option>
+          <option value="6">B Minor</option>
+          <option value="7">C Minor</option>
+          <option value="8">C# / Db Minor</option>
+          <option value="9">D Minor</option>
+          <option value="10">D# / Eb Minor</option>
+          <option value="11">E Minor</option>
+          <option value="12">F Minor</option>
+          <option value="1">F# / Gb Minor</option>
+          <option value="2">G Minor</option>
+          <option value="3">G# / Ab Minor</option>
+      </select>
+      </div>
+      <!--<div class="grid1item">
+      <label id="volumeLabel">Volume</label>
+      <input type="range" id="volumeInput" min="-10" max="10"></input>
+      </div>-->
+      <div class="grid1item">
+      <label id="bpmLabel">BPM</label>
+      <input type="range" step='1' id="bpmInput" min="40" max="200" ></input>
+      </div>
+      <!--<div class="grid1item" id='exportFile'></div>-->
+    </div>
+
+  </main>
+
+  <div class="'grid1">
+    <div class="grid2item" id='bar1display'>1</div>
+    <div class="grid2item" id='bar2display'>2</div>
+    <div class="grid2item" id='bar3display'>3</div>
+    <div class="grid2item" id='bar4display'>4</div>
+  </div>
+    
+
+
+</body>
+
+</html>
